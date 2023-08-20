@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Register | Provoice{% endblock %}
+
+{% block content %}
+<main class="w-3/4 flex flex-col mx-auto h-1/2 justify-center">
+    <h1 class="text-5xl 2xl:text-[2.8em] w-4/5 pb-3 pt-14 mx-auto text-center">activate your account.</h1>
+    <br/>
+    <form method="POST" action="" class="w-full md:w-3/4 xl:w-1/2 2xl:w-1/3 mx-auto space-y-6">
+        {% csrf_token %}
+        <div class="w-full space-y-6">
+            <input type="text" name="first_name" class="border-b border-gray-500 focus:outline-none w-full" placeholder="first name" />
+            <input type="text" name="last_name" class="border-b border-gray-500 focus:outline-none w-full" placeholder="last name" />
+            <input type="email" name="email" class="border-b border-gray-500 focus:outline-none w-full" placeholder="email" />
+            <input type="password" name="password1" class="border-b border-gray-500 focus:outline-none w-full" placeholder="create password" />
+            <input type="password" name="password2" class="border-b border-gray-500 focus:outline-none w-full" placeholder="re-type password" />
+<!--            {{ form.as_p }}-->
+            <div class="w-full flex justify-end">
+                <button type="submit"
+                    class="h-8 text-2xl font-light px-2 text-black hover:text-blue-500">
+                activate
+            </button>
+            </div>
+        </div>
+    </form>
+</main>
+{% endblock content %}
