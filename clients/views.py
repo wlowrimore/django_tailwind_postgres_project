@@ -11,3 +11,18 @@ def view_clients(request):
 
     context = {'all_clients': all_clients}
     return render(request, 'view_clients.html', context)
+
+
+def create_client(request):
+    if request.method == 'POST':
+        form = ClientForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'The client was successfully added!')
+            return redirect(reverse('home'))
+        context = {'form': form}
+        return render(request, 'create_client.html', context)
+
+    context = {'form': ClientForm}
+    return render(request, 'create_client.html', context)
+

@@ -3,6 +3,7 @@
 {% block title %} Clients | Provoice {% endblock %}
 
 {% block content %}
+{% if user.is_authenticated %}
 <h1 class="text-4xl tracking-wide py-4">Client Rolodex</h1>
 <!--<div class="flex flex-col lg:grid lg:grid-cols-4 my-8 mx-20">-->
 <div class="my-8">
@@ -33,4 +34,5 @@
         </div>
     </div>
 </div>
+{% endif %}
 {% endblock content %}

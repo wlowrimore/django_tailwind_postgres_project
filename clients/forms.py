@@ -20,26 +20,26 @@ class ClientForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'address1', 'address2', 'city', 'state', 'zipcode', 'phone', 'email',
                   'notes']
 
-    # def __init__(self, *args, **kwargs):
-    #     super(ClientForm, self).__init__(*args, **kwargs)
-    #
-    #     self.fields['first_name'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['last_name'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['address1'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['address2'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['city'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['state'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['zipcode'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['phone'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['email'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
-    #     self.fields['notes'].widget.attrs[
-    #         'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+    def __init__(self, *args, **kwargs):
+        super(ClientForm, self).__init__(*args, **kwargs)
+
+        self.fields['first_name'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['last_name'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['address1'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['address2'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['city'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['state'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['zipcode'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['phone'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['email'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'
+        self.fields['notes'].widget.attrs[
+            'class'] = 'w-full border-b border-gray-400 text-gray-800 focus:outline-none'

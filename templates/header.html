@@ -18,7 +18,7 @@
 {% if messages %}
 {% for message in messages %}
 <div id="msg" class="relative bg-orange-100 border-b border-gray-700">
-    <p class="ml-[5rem] text-center text-lg py-1">{{ message }}</p>
+    <p class="text-center mx-auto text-lg py-1">{{ message }}</p>
     <button onclick="closeMsg()" class="text-2xl absolute right-5 bottom-[1%]">X</button>
 </div>
 {% endfor %}
