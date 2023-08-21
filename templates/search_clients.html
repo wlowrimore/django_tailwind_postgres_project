@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %} Search Clients | Provoice {% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+<main>
+    <div class="flex flex-col justify-between items-center mb-8">
+        <h1 class="text-4xl tracking-wide py-4">Search Clients</h1>
+        <form method="GET" action="" class="mt-4">
+            {% csrf_token %}
+            <input type="text" name="q"
+                   class="p-2 h-8 bg-green-100 border border-gray-700 rounded focus:outline-none focus:ring-0"
+                   placeholder="search by email"/>
+            <input type="submit"
+                   class="px-2 py-[0.2em] bg-gray-600 text-white border border-gray-700 rounded hover:bg-gray-700"/>
+        </form>
+    </div>
+    {% if client %}
+    <div class="w-full mx-auto border border-gray-700 rounded-md">
+        <div class="flex flex-col">
+            <p class="bg-gray-600 text-white text-3xl py-2 px-4">{{ client.last_name }},&nbsp;{{ client.first_name }}</p>
+            <div class="flex flex-col p-4 text-2xl">
+                <p>{{ client.address1 }}</p>
+
+                {% if client.address2 %}
+                <p>{{ client.address2 }}</p>
+                {% endif %}
+                <p>
+                    {{ client.city }},&nbsp;<span>{{ client.state }}</span></p>
+                <p>
+                    {{ client.zipcode }}</p>
+            </div>
+
+            <div class="flex flex-col pb-4 px-4 text-xl">
+                <p>{{ client.phone }}</p>
+                <p>{{ client.email }}</p>
+            </div>
+
+            {% if client.notes %}
+            <div>
+                <h3 class="bg-red-100 py-1 text-lg font-semibold tracking-wide text-center border-t border-gray-800">Client Notes</h3>
+                <div class="p-4 bg-blue-100">
+                   <p class="text-lg tracing-wide">{{ client.notes }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</main>
+</main>
+{% endif %}
+{% endblock content %}
