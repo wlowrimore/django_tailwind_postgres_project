@@ -1,0 +1,62 @@
+<!--{$ load static %}-->
+{% load tabler_icons %}
+
+<nav class="navbar py-4">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a href="{% url 'home' %}" class="nav-link">
+                {% tabler_icon 'home' %}
+                <span class="link-text">home</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{% url 'create_client' %}" class="nav-link">
+                {% tabler_icon 'user-plus' %}
+                <span class="link-text">add a client</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{% url 'search_clients' %}" class="nav-link">
+                {% tabler_icon 'user-search' %}
+                <span class="link-text">find a client</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{% url 'view_clients' %}" class="nav-link">
+                {% tabler_icon 'users' %}
+                <span class="link-text">view all clients</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                {% tabler_icon 'plus' %}
+                <span class="link-text">create an invoice</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                {% tabler_icon 'search' %}
+                <span class="link-text">find an invoice</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                {% tabler_icon 'moon' %}
+                <span class="link-text">dark mode</span>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                {% tabler_icon 'sun-high' %}
+                <span class="link-text">light mode</span>
+            </a>
+        </li>
+    </ul>
+</nav>

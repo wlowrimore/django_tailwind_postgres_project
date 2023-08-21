@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     "django_browser_reload",
     "phonenumber_field",
+    "tabler_icons",
 
     "users",
     "clients",
