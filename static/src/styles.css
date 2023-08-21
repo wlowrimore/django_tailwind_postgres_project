@@ -550,12 +550,12 @@ video {
   bottom: 1%;
 }
 
-.left-\[38\%\] {
-  left: 38%;
+.left-\[40\.8\%\] {
+  left: 40.8%;
 }
 
-.left-\[40\%\] {
-  left: 40%;
+.left-\[42\.5\%\] {
+  left: 42.5%;
 }
 
 .right-0 {
@@ -572,38 +572,6 @@ video {
 
 .top-16 {
   top: 4rem;
-}
-
-.left-\[50\%\] {
-  left: 50%;
-}
-
-.left-\[43\%\] {
-  left: 43%;
-}
-
-.left-\[42\%\] {
-  left: 42%;
-}
-
-.left-\[41\%\] {
-  left: 41%;
-}
-
-.left-\[40\.5\%\] {
-  left: 40.5%;
-}
-
-.left-\[40\.7\%\] {
-  left: 40.7%;
-}
-
-.left-\[40\.8\%\] {
-  left: 40.8%;
-}
-
-.left-\[42\.5\%\] {
-  left: 42.5%;
 }
 
 .z-20 {
@@ -641,6 +609,10 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .block {
@@ -681,14 +653,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-44 {
-  width: 11rem;
-}
-
-.w-\[4rem\] {
-  width: 4rem;
 }
 
 .flex-col {
@@ -844,6 +808,11 @@ video {
   padding-right: 0.5rem;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -897,6 +866,18 @@ video {
   padding-top: 4rem;
 }
 
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -933,11 +914,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
 }
 
 .font-light {
@@ -994,11 +970,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-300 {
-  --tw-text-opacity: 1;
-  color: rgb(252 165 165 / var(--tw-text-opacity));
-}
-
 .opacity-30 {
   opacity: 0.3;
 }
@@ -1053,24 +1024,8 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:left-\[38\%\] {
-    left: 38%;
-  }
-
-  .md\:left-\[40\%\] {
-    left: 40%;
-  }
-
-  .md\:top-16 {
-    top: 4rem;
-  }
-
   .md\:w-3\/4 {
     width: 75%;
-  }
-
-  .md\:pr-4 {
-    padding-right: 1rem;
   }
 
   .md\:text-5xl {
@@ -1085,16 +1040,16 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-\[38\%\] {
-    left: 38%;
+  .lg\:ml-\[2\.5rem\] {
+    margin-left: 2.5rem;
   }
 
-  .lg\:left-\[40\%\] {
-    left: 40%;
+  .lg\:ml-\[2\.7rem\] {
+    margin-left: 2.7rem;
   }
 
-  .lg\:top-16 {
-    top: 4rem;
+  .lg\:ml-\[5rem\] {
+    margin-left: 5rem;
   }
 
   .lg\:grid {

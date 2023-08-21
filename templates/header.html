@@ -1,6 +1,6 @@
 {% load static %}
 
-<header class="flex flex-col items-center border-b border-gray-700 py-4">
+<header class="flex flex-col items-center border-b border-gray-700 py-4 lg:ml-[5rem]">
     <a href="{% url 'home' %}">
         <img src="{% static 'images/business_logo_placeholder_no_bg.png' %}" class="w-[25rem] px-4 pb-2 relative">
         <h1 class="absolute left-[42.5%] top-16 w-auto text-3xl md:text-5xl text-white z-20 font-normal tracking-widest pb-2 text-center">
@@ -17,8 +17,8 @@
 </header>
 {% if messages %}
 {% for message in messages %}
-<div id="msg" class="relative bg-orange-100 border-b border-gray-700">
-    <p class="text-center mx-auto text-lg py-1">{{ message }}</p>
+<div id="msg" class="relative lg:ml-[5rem] bg-orange-100 border-b border-gray-700">
+    <p class="text-center text-lg py-1">{{ message }}</p>
     <button onclick="closeMsg()" class="text-2xl absolute right-5 bottom-[1%]">X</button>
 </div>
 {% endfor %}
