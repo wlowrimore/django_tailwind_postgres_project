@@ -1,8 +1,14 @@
-<!--{$ load static %}-->
 {% load tabler_icons %}
 
 <nav class="navbar py-4">
     <ul class="navbar-nav">
+        <li class="logo">
+            <a href="{% url 'home' %}" class="nav-link">
+                <span class="logo-link-text text-3xl py-2 border-t border-b border-gray-500">PROVOICE</span>
+                {% tabler_icon 'chevrons-right' 'arrow' 'no' %}
+            </a>
+        </li>
+
         <li class="nav-item">
             <a href="{% url 'home' %}" class="nav-link">
                 {% tabler_icon 'home' %}
